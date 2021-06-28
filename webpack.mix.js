@@ -23,6 +23,7 @@ if (!mix.inProduction()) {
 }
 
 mix.sass('resources/css/style.scss', 'public/css');
+mix.js('resources/js/RandomMovieReactApp/index.jsx', 'public/js/random-movie.js').react();
 
 mix.browserSync({
         host: 'localhost',
